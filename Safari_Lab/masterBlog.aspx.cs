@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Safari_Lab
 {
-    public partial class Contact : System.Web.UI.Page
+    public partial class masterBlog : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

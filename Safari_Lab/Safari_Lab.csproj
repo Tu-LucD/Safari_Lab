@@ -71,29 +71,70 @@
     <Content Include="App_Data\SafariDB_log.ldf">
       <DependentUpon>SafariDB.mdf</DependentUpon>
     </Content>
-    <Content Include="Contact.aspx" />
     <Content Include="CSS\Home.css" />
-    <Content Include="Home.aspx" />
+    <Content Include="CSS\Navigation.css" />
+    <Content Include="masterAbout.aspx" />
+    <Content Include="masterBlog.aspx" />
+    <Content Include="masterContact.aspx" />
+    <Content Include="masterGallery.aspx" />
+    <Content Include="masterHome.aspx" />
+    <Content Include="masterPages.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="masterAbout.aspx.cs">
+      <DependentUpon>masterAbout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="masterAbout.aspx.designer.cs">
+      <DependentUpon>masterAbout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="masterBlog.aspx.cs">
+      <DependentUpon>masterBlog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="masterBlog.aspx.designer.cs">
+      <DependentUpon>masterBlog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterContact.aspx.cs">
+      <DependentUpon>masterContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterContact.aspx.designer.cs">
+      <DependentUpon>masterContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterGallery.aspx.cs">
+      <DependentUpon>masterGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterGallery.aspx.designer.cs">
+      <DependentUpon>masterGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterHome.aspx.cs">
+      <DependentUpon>masterHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterHome.aspx.designer.cs">
+      <DependentUpon>masterHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterPages.aspx.cs">
+      <DependentUpon>masterPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterPages.aspx.designer.cs">
+      <DependentUpon>masterPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Navigation.Master.cs">
+      <DependentUpon>Navigation.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Navigation.Master.designer.cs">
+      <DependentUpon>Navigation.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage\Navigation.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

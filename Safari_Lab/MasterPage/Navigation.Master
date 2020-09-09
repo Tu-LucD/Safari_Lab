@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navigation.master.cs" Inherits="Safari_Lab.Navigation" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">        
+    </asp:ContentPlaceHolder>
+    <link href="../CSS/Navigation.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div background>
+            <center>
+                <div style="width:80%; height:30px; background-color:peru; text-align:left">
+                    <asp:HyperLink ID="linkHome" runat="server" NavigateUrl="~/masterHome.aspx" CssClass="hyperlink">Home</asp:HyperLink>
+                    <asp:HyperLink ID="linkAbout" runat="server" NavigateUrl="~/masterAbout.aspx" CssClass="hyperlink">About</asp:HyperLink>
+                    <asp:HyperLink ID="linkPages" runat="server" NavigateUrl="~/masterPages.aspx" CssClass="hyperlink">Pages</asp:HyperLink>
+                    <asp:HyperLink ID="linkGallery" runat="server" NavigateUrl="~/masterGallery.aspx" CssClass="hyperlink">Gallery</asp:HyperLink>
+                    <asp:HyperLink ID="linkBlog" runat="server" NavigateUrl="~/masterBlog.aspx" CssClass="hyperlink">Blog</asp:HyperLink>
+                    <asp:HyperLink ID="linkContact" runat="server" NavigateUrl="~/masterContact.aspx" CssClass="hyperlink">Contact</asp:HyperLink>
+                </div>
+            </center>
+        </div>
+
+        <div>
+            <center>
+                <div align="center" style="width:80%; height:900px; background-color:rgb(255, 216, 0)">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </center>
+        </div>
+    </form>
+</body>
+</html>
