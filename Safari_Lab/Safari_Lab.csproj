@@ -67,12 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\SafariDB.mdf" />
-    <Content Include="App_Data\SafariDB_log.ldf">
-      <DependentUpon>SafariDB.mdf</DependentUpon>
-    </Content>
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\Navigation.css" />
+    <Content Include="images\safariBackground.jpg" />
     <Content Include="masterAbout.aspx" />
     <Content Include="masterBlog.aspx" />
     <Content Include="masterContact.aspx" />
@@ -143,9 +140,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

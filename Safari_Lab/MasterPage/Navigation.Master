@@ -11,9 +11,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div background>
+        <div style="background-image: url('../images/safariBackground.jpg'); background-size:cover; background-repeat:no-repeat">
             <center>
-                <div style="width:80%; height:30px; background-color:peru; text-align:left">
+                <div style="width:80%; height:70px; text-align:left; background-color:white">
                     <asp:HyperLink ID="linkHome" runat="server" NavigateUrl="~/masterHome.aspx" CssClass="hyperlink">Home</asp:HyperLink>
                     <asp:HyperLink ID="linkAbout" runat="server" NavigateUrl="~/masterAbout.aspx" CssClass="hyperlink">About</asp:HyperLink>
                     <asp:HyperLink ID="linkPages" runat="server" NavigateUrl="~/masterPages.aspx" CssClass="hyperlink">Pages</asp:HyperLink>
@@ -21,11 +21,11 @@
                     <asp:HyperLink ID="linkBlog" runat="server" NavigateUrl="~/masterBlog.aspx" CssClass="hyperlink">Blog</asp:HyperLink>
                     <asp:HyperLink ID="linkContact" runat="server" NavigateUrl="~/masterContact.aspx" CssClass="hyperlink">Contact</asp:HyperLink>
                 </div>
-            </center>
-        </div>
 
-        <div>
-            <center>
+                <div id="search" style="width:80%; height:70px; text-align:left; background-color:black">
+                    <p><i class="fas fa-globe-africa"></i>Safari Adventure</p>
+                </div>
+
                 <div align="center" style="width:80%; height:900px; background-color:rgb(255, 216, 0)">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
