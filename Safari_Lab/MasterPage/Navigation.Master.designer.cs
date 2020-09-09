@@ -33,13 +33,13 @@ namespace Safari_Lab
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// linkHome control.
+        /// ddListHome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink linkHome;
+        protected global::System.Web.UI.WebControls.DropDownList ddListHome;
 
         /// <summary>
         /// linkAbout control.
