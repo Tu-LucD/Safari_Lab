@@ -51,13 +51,13 @@ namespace Safari_Lab
         protected global::System.Web.UI.WebControls.HyperLink linkAbout;
 
         /// <summary>
-        /// linkPages control.
+        /// ddListPages control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink linkPages;
+        protected global::System.Web.UI.WebControls.DropDownList ddListPages;
 
         /// <summary>
         /// linkGallery control.

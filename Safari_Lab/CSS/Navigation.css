@@ -52,4 +52,17 @@ a {
 
 .ddList {
     border: 0px;
+    margin-left:50px;
+    -webkit-appearance: none;
+    font-size: 20px;
+    font-family:serif;
+    width: 55px;
+}
+.ddList option:checked{
+    background-color: white;
+}
+
+.fas fa-chevron-down{
+    font-size: 20px;
+    font-family: serif;
 }

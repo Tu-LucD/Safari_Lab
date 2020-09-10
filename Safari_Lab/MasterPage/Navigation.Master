@@ -15,11 +15,22 @@
         <div >
             <center>
                 <div id="links">
-                    <asp:DropDownList ID="ddListHome" runat="server" CssClass="ddList">
+                    <asp:DropDownList ID="ddListHome" runat="server" CssClass="ddList" OnSelectedIndexChanged="ddListHome_SelectedIndexChanged" AutoPostBack="true">                        
                         <asp:ListItem>Home</asp:ListItem>
+                        <asp:ListItem>Zoos</asp:ListItem>
                     </asp:DropDownList>
+                    <i class="fas fa-chevron-down"></i>
+
                     <asp:HyperLink ID="linkAbout" runat="server" NavigateUrl="~/masterAbout.aspx" CssClass="hyperlink">About</asp:HyperLink>
-                    <asp:HyperLink ID="linkPages" runat="server" NavigateUrl="~/masterPages.aspx" CssClass="hyperlink">Pages</asp:HyperLink>
+
+
+                    
+                    <asp:DropDownList ID="ddListPages" runat="server" CssClass="ddList" OnSelectedIndexChanged="ddListPages_SelectedIndexChanged" AutoPostBack="true">                        
+                        <asp:ListItem>Pages</asp:ListItem>
+                        <asp:ListItem>Park Safari</asp:ListItem>
+                        <asp:ListItem>Zoo de Granby</asp:ListItem>
+                    </asp:DropDownList>
+                    <i class="fas fa-chevron-down"></i>
                     <asp:HyperLink ID="linkGallery" runat="server" NavigateUrl="~/masterGallery.aspx" CssClass="hyperlink">Gallery</asp:HyperLink>
                     <asp:HyperLink ID="linkBlog" runat="server" NavigateUrl="~/masterBlog.aspx" CssClass="hyperlink">Blog</asp:HyperLink>
                     <asp:HyperLink ID="linkContact" runat="server" NavigateUrl="~/masterContact.aspx" CssClass="hyperlink">Contact</asp:HyperLink>
