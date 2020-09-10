@@ -1,0 +1,16 @@
+﻿body {
+}
+
+#left {
+    text-align: left;
+    float: left;
+    width: 500px;
+    height: 100%;
+}
+#right {
+    float: right
+}
+
+#contactMain{
+    background-color: black;
+}

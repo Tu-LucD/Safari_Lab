@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\Contact.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\Navigation.css" />
     <Content Include="images\safariBackground.jpg" />
