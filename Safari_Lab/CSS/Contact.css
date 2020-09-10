@@ -1,16 +1,35 @@
 ﻿body {
 }
 
+a.contactLinks{
+    color: orange;
+}
+
+i.fa-home{
+    color: orange;
+}
+
+i.fa-phone {
+    color: orange;
+}
+
+i.fa-briefcase {
+    color: orange;
+}
+
 #left {
-    text-align: left;
     float: left;
-    width: 500px;
+    width: 30%;
     height: 100%;
 }
 #right {
-    float: right
+    height: 100%;
+    width: 70%;
+    float: left;
+    
 }
 
-#contactMain{
-    background-color: black;
+#contactMain {
+    text-align: left;
+    
 }
