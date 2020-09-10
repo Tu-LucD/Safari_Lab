@@ -9,9 +9,10 @@ namespace Safari_Lab
 {
     public partial class masterHome : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
