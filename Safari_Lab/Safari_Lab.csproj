@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\SafariDB.mdf" />
+    <Content Include="App_Data\SafariDB_log.ldf">
+      <DependentUpon>SafariDB.mdf</DependentUpon>
+    </Content>
     <Content Include="CSS\Contact.css" />
     <Content Include="CSS\Home.css" />
     <Content Include="CSS\Navigation.css" />
