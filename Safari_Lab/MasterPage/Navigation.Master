@@ -7,30 +7,47 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">        
     </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="../CSS/Navigation.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/df28e441d6.js" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
 </head>
 <body style="background-image: url('../images/safariBackground.jpg'); background-size:cover; background-repeat:no-repeat;">
     <form id="form1" runat="server">
         <div >
             <center>
                 <div id="links">
-                    <asp:DropDownList ID="ddListHome" runat="server" CssClass="ddList" OnSelectedIndexChanged="ddListHome_SelectedIndexChanged" AutoPostBack="true">                        
-                        <asp:ListItem>Home</asp:ListItem>
-                        <asp:ListItem>Zoos</asp:ListItem>
-                    </asp:DropDownList>
-                    <i class="fas fa-chevron-down"></i>
+                    <div class="btn-group">
+                      <a href="masterHome.aspx" class="btn btn-link btn-lg active" role="button" aria-pressed="true">Home</a>
+                      <button type="button" class="btn btn-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-chevron-down"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://traveltriangle.com/blog/zoos-in-canada/" target="_blank">Zoos</a>
+                          <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://www.tourradar.com/i/africa-safari" target="_blank">Safari Packages</a>
+                      </div>
+                    </div>                    
 
-                    <asp:HyperLink ID="linkAbout" runat="server" NavigateUrl="~/masterAbout.aspx" CssClass="hyperlink">About</asp:HyperLink>
+                    <asp:HyperLink ID="linkAbout" runat="server" NavigateUrl="~/masterAbout.aspx" CssClass="hyperlink aboutLink">About</asp:HyperLink>
 
-
+                    <div class="btn-group">
+                      <a href="masterPages.aspx" class="btn btn-link btn-lg active" role="button" aria-pressed="true">Pages</a>
+                      <button type="button" class="btn btn-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-chevron-down"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://parcsafari.com/en/" target="_blank">Park Safari</a>
+                          <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://zoodegranby.com/en/" target="_blank">Zoo de Granby</a>
+                      </div>
+                    </div>      
                     
-                    <asp:DropDownList ID="ddListPages" runat="server" CssClass="ddList" OnSelectedIndexChanged="ddListPages_SelectedIndexChanged" AutoPostBack="true">                        
-                        <asp:ListItem>Pages</asp:ListItem>
-                        <asp:ListItem>Park Safari</asp:ListItem>
-                        <asp:ListItem>Zoo de Granby</asp:ListItem>
-                    </asp:DropDownList>
-                    <i class="fas fa-chevron-down"></i>
+                    
                     <asp:HyperLink ID="linkGallery" runat="server" NavigateUrl="~/masterGallery.aspx" CssClass="hyperlink">Gallery</asp:HyperLink>
                     <asp:HyperLink ID="linkBlog" runat="server" NavigateUrl="~/masterBlog.aspx" CssClass="hyperlink">Blog</asp:HyperLink>
                     <asp:HyperLink ID="linkContact" runat="server" NavigateUrl="~/masterContact.aspx" CssClass="hyperlink">Contact</asp:HyperLink>
