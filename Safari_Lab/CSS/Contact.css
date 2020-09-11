@@ -21,15 +21,33 @@ i.fa-briefcase {
     float: left;
     width: 30%;
     height: 100%;
+    padding-top:25px;
+    padding-left: 10px;
+    
 }
 #right {
     height: 100%;
-    width: 70%;
+    width: 60%;
     float: left;
+    padding-left:20px;
+    padding-top: 25px;
     
 }
 
 #contactMain {
     text-align: left;
-    
 }
+
+a {
+    padding-top: 20px;
+}
+
+.divLeftTop{
+    padding-top: 20px;
+    color: grey;
+}
+.divLeftBottom{
+    padding-bottom: 20px;
+    color: grey;
+}
+
