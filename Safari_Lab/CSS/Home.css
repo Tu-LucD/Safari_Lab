@@ -1,6 +1,46 @@
 ﻿body {
+    background-color:red;
+    border: solid red;
 }
 #image{
     width:100%;
     height:500px;
+}
+
+#container {
+    position: relative;
+    text-align:center;
+}
+
+#centerText {
+    color: white;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+#centerTitle {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+#centerSubtitle {
+    font-size: 35px;
+}
+
+#imageButtonsDiv {
+    position: absolute;
+    bottom: 50px;
+    right: 34px;
+}
+
+.imageButtons {
+    width: 50px;
+    height: 3px;
+    border: solid white;
+}
+
+#giraffeButton {
+    border: solid orange;    
 }
