@@ -9,10 +9,35 @@ namespace Safari_Lab
         SqlConnection con;
         String myCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\james\Desktop\Safari3\Safari_Lab\App_Data\SafariDB.mdf;Integrated Security=True";
         SqlCommand cmd;
-
+        public string txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10;
         protected void Page_Load(object sender, EventArgs e)
         {
             BtnSend.Enabled = true;
+            try
+            {
+                Connect();
+                cmd.CommandText = "select * from TextContact where id=1";
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    txt1 = reader["text1"].ToString();
+                    txt2 = reader["text2"].ToString();
+                    txt3 = reader["text3"].ToString();
+                    txt4 = reader["text4"].ToString();
+                    txt5 = reader["text5"].ToString();
+                    txt6 = reader["text6"].ToString();
+                    txt7 = reader["text7"].ToString();
+                    txt8 = reader["text8"].ToString();
+                    txt9 = reader["text9"].ToString();
+                    txt10 = reader["text10"].ToString();
+                }
+
+                con.Close();
+            }
+            catch(Exception ex)
+            {
+                lblResult.Text = ex.Message;
+            }
         }
 
         protected void BtnClear_Click(object sender, EventArgs e)
