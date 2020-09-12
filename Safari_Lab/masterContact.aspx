@@ -26,8 +26,9 @@
             <asp:TextBox ID="emailTxt" style="margin-right: 15px; margin-bottom: 15px;" placeholder="Email" runat="server"></asp:TextBox>
             <asp:TextBox ID="phoneTxt" style="margin-bottom: 15px;" placeholder="Phone" runat="server"></asp:TextBox>
             <asp:TextBox ID="messageTxt" style=" margin-top: 15px;" placeholder="Message" runat="server" Height="118px" TextMode="MultiLine" Width="589px"></asp:TextBox><br />
-            <asp:Button ID="BtnSend" style="margin-right: 30px; margin-top: 30px;" runat="server" Text="Send" Height="34px" Width="98px" BackColor="Orange" ForeColor="White" />
-            <asp:Button ID="BtnClear" runat="server" Text="Clear" Height="33px" Width="95px" BackColor="Orange" ForeColor="White" />
+            <asp:Button ID="BtnSend" style="margin-right: 30px; margin-top: 30px;" runat="server" Text="Send" Height="34px" Width="98px" BackColor="Orange" ForeColor="White" OnClick="BtnSend_Click" />
+            <asp:Button ID="BtnClear" runat="server" Text="Clear" Height="33px" Width="95px" BackColor="Orange" ForeColor="White" OnClick="BtnClear_Click" /><br />
+            <asp:Label ID="lblResult" runat="server" style="margin-top: 15px;" ForeColor="#A0A2A0"></asp:Label>
 
         </div>
     </div>
