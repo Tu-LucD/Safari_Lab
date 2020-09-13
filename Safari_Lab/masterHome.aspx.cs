@@ -34,30 +34,31 @@ namespace Safari_Lab
                     img6 = reader["image7"].ToString();
                 }
 
-                cmd.CommandText = "select * from TextHome where id=1";
-                reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    txt1 = reader["text1"].ToString();
-                    txt2 = reader["text2"].ToString();
-                    txt3 = reader["text3"].ToString();
-                    txt4 = reader["text4"].ToString();
-                    txt5 = reader["text5"].ToString();
-                    txt6 = reader["text6"].ToString();
-                    txt7 = reader["text7"].ToString();
-                    txt8 = reader["text8"].ToString();
-                    txt9 = reader["text9"].ToString();
-                    txt10 = reader["text10"].ToString();
-                    txt11= reader["text11"].ToString();
-                    txt12 = reader["text12"].ToString();
-                }
-
                 con.Close();
             }
             catch(Exception ex)
             {
 
             }
+            Connect();
+            cmd.CommandText = "select * from TextHome where id=1";
+            SqlDataReader reader2 = cmd.ExecuteReader();
+            while (reader2.Read())
+            {
+                txt1 = reader2["text1"].ToString();
+                txt2 = reader2["text2"].ToString();
+                txt3 = reader2["text3"].ToString();
+                txt4 = reader2["text4"].ToString();
+                txt5 = reader2["text5"].ToString();
+                txt6 = reader2["text6"].ToString();
+                txt7 = reader2["text7"].ToString();
+                txt8 = reader2["text8"].ToString();
+                txt9 = reader2["text9"].ToString();
+                txt10 = reader2["text10"].ToString();
+                txt11 = reader2["text11"].ToString();
+                txt12 = reader2["text12"].ToString();
+            }
+            con.Close();
         }
 
         public void Connect()

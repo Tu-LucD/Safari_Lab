@@ -62,7 +62,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="container">
-       <img id="image" src="images/1.jpg" onclick="imageLink()"/>
+       <img id="image" src=<%=img1 %> onclick="imageLink()"/>
        <div id="centerText">
            <p id="centerTitle"><%=txt1 %></p>
            <p id="centerSubtitle"><%=txt2 %></p>
@@ -80,7 +80,7 @@
                <%=txt3 %>
            </div>
 
-           <img src="images/safariDescription1.jpg"/>
+           <img src=<%=img4 %> />
 
            <div class="descContent">
                <h4><%=txt6 %></h4>
@@ -94,7 +94,7 @@
                <%=txt4 %>
            </div>
 
-           <img src="images/safariDescription2.jpg"/>
+           <img src=<%=img5 %> />
 
            <div class="descContent">
                <h4><%=txt7 %></h4>
@@ -108,7 +108,7 @@
                <%=txt5 %>
            </div>
 
-           <img src="images/safariDescription3.jpg"/>
+           <img src=<%=img6 %> />
 
            <div class="descContent">
                <h4><%=txt8 %></h4>

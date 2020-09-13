@@ -34,12 +34,7 @@ namespace Safari_Lab
                     txt7 = reader["text7"].ToString();
                 }
 
-                cmd.CommandText = "select * from ImageHome where id=1";
-                reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    img1 = reader["image1"].ToString();
-                }
+                
 
 
                 con.Close();
@@ -48,6 +43,14 @@ namespace Safari_Lab
             {
 
             }
+            Connect();
+            cmd.CommandText = "select * from ImageHome where id=1";
+            SqlDataReader reader2 = cmd.ExecuteReader();
+            while (reader2.Read())
+            {
+                img1 = reader2["image1"].ToString();
+            }
+            con.Close();
         }
 
         public void Connect()
