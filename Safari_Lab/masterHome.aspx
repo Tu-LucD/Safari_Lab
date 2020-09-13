@@ -18,33 +18,15 @@
         setInterval(changeImage, interval);
 
         function changeImage() {
-            $(".imageButtons").css("border", "solid white");
+            $(".imageIndicators").css("border", "solid white");
             
-            if(imageNumber == 1) $("#giraffeButton").css("border", "solid orange");
+            if(imageNumber == 1) $("#giraffeIndicator").css("border", "solid orange");
             
-            else if(imageNumber == 2) $("#lionButton").css("border", "solid orange");
+            else if(imageNumber == 2) $("#lionIndicator").css("border", "solid orange");
         
-            else $("#rhinoButton").css("border", "solid orange");
+            else $("#rhinoIndicator").css("border", "solid orange");
 
             document.getElementById("image").setAttribute("src", "images/" + imageNumber + ".jpg")
-        }
-
-        function giraffeImage(){
-            document.getElementById("image").setAttribute("src", "images/1.jpg")
-            imageNumber = 1;
-            $("#giraffeButton").css("border", "solid orange");
-        }
-
-        function lionImage(){
-            document.getElementById("image").setAttribute("src", "images/2.jpg")
-            imageNumber = 2;
-            $("#lionButton").css("border", "solid orange");
-        }
-
-        function rhinoImage(){
-            document.getElementById("image").setAttribute("src", "images/3.jpg")
-            imageNumber = 3;
-            $("#rhinoButton").css("border", "solid orange");            
         }
 
         function holidayButton() {
@@ -82,56 +64,56 @@
     <div id="container">
        <img id="image" src="images/1.jpg" onclick="imageLink()"/>
        <div id="centerText">
-           <p id="centerTitle">Explore Africa</p>
-           <p id="centerSubtitle">During Amazing Safari Tours!</p>
+           <p id="centerTitle"><%=txt1 %></p>
+           <p id="centerSubtitle"><%=txt2 %></p>
        </div>
-       <div id="imageButtonsDiv">
-           <button id="giraffeButton" class="imageButtons" onclick="giraffeImage()"></button>
-           <button id="lionButton" class="imageButtons" onclick="lionImage()"></button>
-           <button id="rhinoButton" class="imageButtons" onclick="rhinoImage()"></button>
+       <div id="imageProgress">
+           <button class="imageIndicators" id="giraffeIndicator"></button>
+           <button class="imageIndicators" id="lionIndicator"></button>
+           <button class="imageIndicators" id="rhinoIndicator"></button>
        </div>
    </div>
 
    <div id="descriptionsDiv">
        <div class="description">
            <div class="descTitle">
-               Unusual Holidays
+               <%=txt3 %>
            </div>
 
            <img src="images/safariDescription1.jpg"/>
 
            <div class="descContent">
-               <h4>Spend a weekend with us</h4>
-               When you book your tuesday with Safari Adventure, you can reset assured that we are a fully licensed travel agency.
-               <button class="descButton" onclick="holidayButton()">More</button>
+               <h4><%=txt6 %></h4>
+               <%=txt9 %>
+               <button class="descButton" onclick="holidayButton()"><%=txt12 %></button>
            </div>
        </div>
 
        <div class="description">
            <div class="descTitle">
-               Best Time to visit
+               <%=txt4 %>
            </div>
 
            <img src="images/safariDescription2.jpg"/>
 
            <div class="descContent">
-               <h4>Plan your African Safari with us</h4>
-               Our company offers adventures in Africa, connecting you the diverse wildlife.
-               <button class="descButton" onclick="visitButton()">More</button>
+               <h4><%=txt7 %></h4>
+               <%=txt10 %>
+               <button class="descButton" onclick="visitButton()"><%=txt12 %></button>
            </div>
        </div>
 
        <div class="description">
            <div class="descTitle">
-               Big Cat Safaris
+               <%=txt5 %>
            </div>
 
            <img src="images/safariDescription3.jpg"/>
 
            <div class="descContent">
-               <h4>Explore Africa's unique safari</h4>
-               The variety and beauty of Africa will take your breath away. The choices are exceptional.
-               <button class="descButton" onclick="bigCatButton()">More</button>
+               <h4><%=txt8 %></h4>
+               <%=txt11 %>
+               <button class="descButton" onclick="bigCatButton()"><%=txt12 %></button>
            </div>
        </div>
    </div>

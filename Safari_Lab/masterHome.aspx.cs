@@ -15,7 +15,7 @@ namespace Safari_Lab
         String myCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|SafariDB.mdf;Integrated Security=False";
         SqlCommand cmd;
         public string img1, img2, img3, img4, img5, img6;
-        public string txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10, txt11;
+        public string txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10, txt11, txt12;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -49,6 +49,7 @@ namespace Safari_Lab
                     txt9 = reader["text9"].ToString();
                     txt10 = reader["text10"].ToString();
                     txt11= reader["text11"].ToString();
+                    txt12 = reader["text12"].ToString();
                 }
 
                 con.Close();

@@ -27,19 +27,19 @@
     font-size: 35px;
 }
 
-#imageButtonsDiv {
+#imageProgress {
     position: absolute;
     bottom: 50px;
     right: 34px;
 }
 
-.imageButtons {
+.imageIndicators {
     width: 50px;
     height: 3px;
     border: solid white;
 }
 
-#giraffeButton {
+#giraffeIndicator {
     border: solid orange;    
 }
 
