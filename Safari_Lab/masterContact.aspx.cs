@@ -72,7 +72,7 @@ namespace Safari_Lab
             
         }
 
-        private void Connect()
+        public void Connect()
         {
             con = new SqlConnection(myCon);
             con.Open();
