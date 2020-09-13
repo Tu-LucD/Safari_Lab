@@ -86,6 +86,9 @@
     <Content Include="images\1.jpg" />
     <Content Include="images\2.jpg" />
     <Content Include="images\3.jpg" />
+    <Content Include="images\safariDescription1.jpg" />
+    <Content Include="images\safariDescription2.jpg" />
+    <Content Include="images\safariDescription3.jpg" />
     <Content Include="masterAbout.aspx" />
     <Content Include="masterBlog.aspx" />
     <Content Include="masterContact.aspx" />

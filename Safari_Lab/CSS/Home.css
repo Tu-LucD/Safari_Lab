@@ -1,6 +1,4 @@
-﻿body {
-    background-color:red;
-    border: solid red;
+﻿body {   
 }
 #image{
     width:100%;
@@ -43,4 +41,46 @@
 
 #giraffeButton {
     border: solid orange;    
+}
+
+.description {
+    display: table-cell;    
+    border-top: solid 5px orange;    
+    background-color: white;    
+}
+
+#descriptionsDiv {
+    display: table;
+    width: 80%;    
+    border-spacing: 100px 5px;    
+    table-layout: fixed;
+    margin-top: -40px;
+    position: absolute;    
+}
+
+.descTitle {
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px 10px 20px
+}
+
+.descContent {
+    padding: 20px;
+    height:175px;
+    position: relative;
+}
+
+img {
+    width: 321px;
+    height: 150px;
+}
+
+.descButton {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    color: white;
+    background-color: orange;
+    border: solid orange;
 }

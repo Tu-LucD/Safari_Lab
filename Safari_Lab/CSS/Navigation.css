@@ -57,10 +57,10 @@ a {
 
 #content {
     clear: both;
-    width:80%;
-    height: 800px;
+    width: 80%;
+    height: 875px;
     align-content: center;
-    background-color:#fffdd0;
+    background-color: #fffdd0;    
 }
 
 .ddList {
