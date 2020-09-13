@@ -7,7 +7,7 @@ namespace Safari_Lab
     public partial class masterContact : System.Web.UI.Page
     {
         SqlConnection con;
-        String myCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\james\Desktop\Safari3\Safari_Lab\App_Data\SafariDB.mdf;Integrated Security=True";
+        String myCon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|SafariDB.mdf;Integrated Security=False";
         SqlCommand cmd;
         public string txt1, txt2, txt3, txt4, txt5, txt6, txt7, txt8, txt9, txt10;
         protected void Page_Load(object sender, EventArgs e)
